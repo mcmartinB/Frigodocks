@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{e0925ae8-0642-4342-b0a9-9c13e634d61a}</ProjectGuid>
+    <MainSource>Frigodocks.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>Frigodocks.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Define>DEBUG</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">False</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">3082</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName"></VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">Frigodocks.dpr</Source></Source></Delphi.Personality><ModelSupport>False</ModelSupport></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="Frigodocks.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="BAlmacenes.pas">
+      <Form>BusquedaAlmacenes</Form>
+    </DCCReference>
+    <DCCReference Include="BArticulos.pas">
+      <Form>BusquedaArticulos</Form>
+    </DCCReference>
+    <DCCReference Include="BArticulosCliente.pas">
+      <Form>BusquedaArticulosCliente</Form>
+    </DCCReference>
+    <DCCReference Include="BClientes.pas">
+      <Form>BusquedaClientes</Form>
+    </DCCReference>
+    <DCCReference Include="BCobros.pas">
+      <Form>BusquedaCobros</Form>
+    </DCCReference>
+    <DCCReference Include="BConceptos.pas">
+      <Form>BusquedaConceptos</Form>
+    </DCCReference>
+    <DCCReference Include="BConsumos.pas">
+      <Form>BusquedaConsumos</Form>
+    </DCCReference>
+    <DCCReference Include="BCorreos.pas">
+      <Form>BusquedaCorreos</Form>
+    </DCCReference>
+    <DCCReference Include="BEmpresas.pas">
+      <Form>BusquedaEmpresas</Form>
+    </DCCReference>
+    <DCCReference Include="BEntradas.pas">
+      <Form>BusquedaEntradas</Form>
+    </DCCReference>
+    <DCCReference Include="BFacturas.pas">
+      <Form>BusquedaFacturas</Form>
+    </DCCReference>
+    <DCCReference Include="BFamilias.pas">
+      <Form>BusquedaFamilias</Form>
+    </DCCReference>
+    <DCCReference Include="BLotes.pas">
+      <Form>BusquedaLotes</Form>
+    </DCCReference>
+    <DCCReference Include="BLotesCamaraZona.pas">
+      <Form>BusquedaCamaraZona</Form>
+    </DCCReference>
+    <DCCReference Include="BPeriodicosFact.pas">
+      <Form>BusquedaPeriodicos</Form>
+    </DCCReference>
+    <DCCReference Include="BSalidas.pas">
+      <Form>BusquedaSalidas</Form>
+    </DCCReference>
+    <DCCReference Include="BTarifas.pas">
+      <Form>BusquedaTarifas</Form>
+    </DCCReference>
+    <DCCReference Include="BUnidadesMedida.pas">
+      <Form>BusquedaUnidadesMedida</Form>
+    </DCCReference>
+    <DCCReference Include="BUsuarios.pas">
+      <Form>BusquedaUsuarios</Form>
+    </DCCReference>
+    <DCCReference Include="dlgConfigPrinter.pas">
+      <Form>DConfigPrinter</Form>
+    </DCCReference>
+    <DCCReference Include="dlgPreview.pas">
+      <Form>DPreview</Form>
+    </DCCReference>
+    <DCCReference Include="FAlmacenes.pas" />
+    <DCCReference Include="FArticulos.pas">
+      <Form>Articulos</Form>
+    </DCCReference>
+    <DCCReference Include="FArticulosClientes.pas">
+      <Form>ArticulosClientes</Form>
+    </DCCReference>
+    <DCCReference Include="FAutorizacion.pas">
+      <Form>Autorizacion</Form>
+    </DCCReference>
+    <DCCReference Include="FCambioFamiliaArticulo.pas">
+      <Form>CambiarFamiliaArticulo</Form>
+    </DCCReference>
+    <DCCReference Include="FClientes.pas">
+      <Form>Clientes</Form>
+    </DCCReference>
+    <DCCReference Include="FCobros.pas">
+      <Form>Cobros</Form>
+    </DCCReference>
+    <DCCReference Include="FConceptos.pas">
+      <Form>Conceptos</Form>
+    </DCCReference>
+    <DCCReference Include="FConsumos.pas">
+      <Form>Consumos</Form>
+    </DCCReference>
+    <DCCReference Include="FContabilizacion.pas">
+      <Form>Contabilizacion</Form>
+    </DCCReference>
+    <DCCReference Include="FCorreo.pas">
+      <Form>Correo</Form>
+    </DCCReference>
+    <DCCReference Include="FDescargarDatos.pas">
+      <Form>DescargaDatos</Form>
+    </DCCReference>
+    <DCCReference Include="FEmpresas.pas">
+      <Form>Empresas</Form>
+    </DCCReference>
+    <DCCReference Include="FEntradas.pas">
+      <Form>Entradas</Form>
+    </DCCReference>
+    <DCCReference Include="FFacturacion.pas">
+      <Form>Facturacion</Form>
+    </DCCReference>
+    <DCCReference Include="FFacturas.pas">
+      <Form>Facturas</Form>
+    </DCCReference>
+    <DCCReference Include="FFamilias.pas">
+      <Form>Familias</Form>
+    </DCCReference>
+    <DCCReference Include="FLAlmacenes.pas">
+      <Form>ListadoAlmacenes</Form>
+    </DCCReference>
+    <DCCReference Include="FLArticulos.pas">
+      <Form>ListadoArticulos</Form>
+    </DCCReference>
+    <DCCReference Include="FLArticulosCliente.pas">
+      <Form>ListadoArticulosCliente</Form>
+    </DCCReference>
+    <DCCReference Include="FLChequeoLotes.pas">
+      <Form>ChequeoLotes</Form>
+    </DCCReference>
+    <DCCReference Include="FLClientes.pas">
+      <Form>ListadoClientes</Form>
+    </DCCReference>
+    <DCCReference Include="FLCobros.pas">
+      <Form>ListadoCobros</Form>
+    </DCCReference>
+    <DCCReference Include="FLEmpresas.pas">
+      <Form>ListadoEmpresas</Form>
+    </DCCReference>
+    <DCCReference Include="FLEntradas.pas">
+      <Form>ListadoEntradas</Form>
+    </DCCReference>
+    <DCCReference Include="FLFacturas.pas">
+      <Form>ListadoFacturas</Form>
+    </DCCReference>
+    <DCCReference Include="FLFamilias.pas">
+      <Form>ListadoFamilias</Form>
+    </DCCReference>
+    <DCCReference Include="FLKilosCliente.pas">
+      <Form>ListadoKilosPorCliente</Form>
+    </DCCReference>
+    <DCCReference Include="FLMovimientosCliente.pas">
+      <Form>ListadoMovimientosCliente</Form>
+    </DCCReference>
+    <DCCReference Include="FLMovimientosLote.pas">
+      <Form>ListadoMovimientosLote</Form>
+    </DCCReference>
+    <DCCReference Include="FLMovimientosLotesEx.pas">
+      <Form>LMovimientosLotesEx</Form>
+    </DCCReference>
+    <DCCReference Include="FLPeriodicos.pas">
+      <Form>ListadoPeriodicos</Form>
+    </DCCReference>
+    <DCCReference Include="FLSalidas.pas">
+      <Form>ListadoSalidas</Form>
+    </DCCReference>
+    <DCCReference Include="FLTarifas.pas">
+      <Form>ListadoTarifas</Form>
+    </DCCReference>
+    <DCCReference Include="FLUnidades.pas">
+      <Form>ListadoUnidades</Form>
+    </DCCReference>
+    <DCCReference Include="FPeriodicosFact.pas">
+      <Form>PeriodicosFact</Form>
+    </DCCReference>
+    <DCCReference Include="FPrincipal.pas">
+      <Form>Principal</Form>
+    </DCCReference>
+    <DCCReference Include="FRepeticionFactura.pas">
+      <Form>RepetionFactura</Form>
+    </DCCReference>
+    <DCCReference Include="FSalidas.pas">
+      <Form>Salidas</Form>
+    </DCCReference>
+    <DCCReference Include="FTarifas.pas" />
+    <DCCReference Include="FUnidadesMedida.pas">
+      <Form>UnidadesMedida</Form>
+    </DCCReference>
+    <DCCReference Include="FUsuarios.pas">
+      <Form>Usuarios</Form>
+    </DCCReference>
+    <DCCReference Include="LAlbaranEntrada.pas">
+      <Form>QRAlbaranEntrada</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="LAlbaranSalida.pas">
+      <Form>QRAlbaranSalida</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="LEntradasCliente.pas">
+      <Form>QREntradasCliente</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="LEntradasFecha.pas">
+      <Form>QREntradasFecha</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="LFactura.pas">
+      <Form>QRFactura</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="LMovimientosCliente.pas">
+      <Form>QRMovimientosCliente</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="LMovimientosLote.pas">
+      <Form>QRMovimientosLote</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="LRMovimientosLotesEx.pas">
+      <Form>QRMovimientosLotesEx</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="LSalidasCliente.pas">
+      <Form>QRSalidasCliente</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="LSalidasFecha.pas">
+      <Form>QRSalidasFecha</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="LUsuarios.pas">
+      <Form>QRUsuarios</Form>
+      <DesignClass>TQuickRep</DesignClass>
+    </DCCReference>
+    <DCCReference Include="MBaseDatos.pas">
+      <Form>DMBaseDatos</Form>
+      <DesignClass>TDataModule</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Password.pas">
+      <Form>FPassword</Form>
+    </DCCReference>
+    <DCCReference Include="UGLobal.pas" />
+    <DCCReference Include="untInterfaces.pas" />
+  </ItemGroup>
+</Project>
